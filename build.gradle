@@ -1,0 +1,8 @@
+group 'doneathome'
+version '1.0'
+
+ext{
+
+    javax_ws_rs_javax_ws_rs_api_version='2.0';
+}
+
