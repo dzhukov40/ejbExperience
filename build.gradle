@@ -2,7 +2,11 @@ group 'doneathome'
 version '1.0'
 
 ext{
-
+    // в наименовании есть правила [ все через _ и подряд (group name version) ]
     javax_ws_rs_javax_ws_rs_api_version='2.0';
+    org_jboss_spec_jboss_javaee_6_0_version='3.0.3.Final';
+    org_apache_commons_commons_lang3_version='3.3.1';
+
+    javax_ejb_javax_ejb_api_version='3.2';
 }
 

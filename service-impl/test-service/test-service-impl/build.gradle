@@ -10,5 +10,9 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile(project(":service-api:test-service-api"));
+
+    // заметь синтаксис [ group:name:version ]
+    compile ("javax.ejb:javax.ejb-api:${javax_ejb_javax_ejb_api_version}")
 }
