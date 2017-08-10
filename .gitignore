@@ -1,2 +1,8 @@
+# http://linuxdoc.ru/glob.html
+
 /.idea
-/build/
+/info
+/.gradle
+build/
+#*.ear
+!*build.gradle

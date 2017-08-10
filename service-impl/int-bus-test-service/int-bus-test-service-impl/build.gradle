@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     // заметь синтаксис [ :name:version ]
+    compile(project(":service-api:int-bus-test-service-api"));
     compile(project(":service-api:test-service-api"));
     // заметь синтаксис [ group:name:version ]
     compile ("javax.ejb:javax.ejb-api:${javax_ejb_javax_ejb_api_version}")

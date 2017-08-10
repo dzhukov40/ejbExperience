@@ -8,5 +8,5 @@ package ru.doneathome.ejbexperience.test;
  */
 public interface TestFacade {
 
-    public String doTest();
+    public String doTestFacade();
 }
