@@ -1,6 +1,6 @@
-package ru.doneathome.ejbexperience.test.impl;
+package ru.doneathome.ejbexperience.intbus.test.api.impl;
 
-import ru.doneathome.ejbexperience.test.api.TestService;
+import ru.doneathome.ejbexperience.intbus.test.api.api.TestService;
 
 import javax.ejb.Remote;
 import javax.ejb.Stateless;

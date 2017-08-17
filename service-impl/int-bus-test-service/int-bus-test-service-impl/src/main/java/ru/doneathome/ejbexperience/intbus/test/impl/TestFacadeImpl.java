@@ -1,7 +1,7 @@
 package ru.doneathome.ejbexperience.intbus.test.impl;
 
-import ru.doneathome.ejbexperience.test.TestFacade;
-import ru.doneathome.ejbexperience.test.api.TestService;
+import ru.doneathome.ejbexperience.intbus.test.api.TestFacade;
+import ru.doneathome.ejbexperience.intbus.test.api.api.TestService;
 
 import javax.ejb.*;
 
@@ -16,13 +16,14 @@ import javax.ejb.*;
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class TestFacadeImpl implements TestFacade {
 
-    //@EJB(lookup = "")
+    // инжектим сервис
+    @EJB(lookup = "ejb:test-service-ear/test-service-impl/TestService!ru.doneathome.ejbexperience.test.impl.TestService")
     private TestService testService;
 
 
     @Override
     public String doTestFacade() {
-        return "this is TestFacadeImpl.doTest()";
+        return "this is TestFacadeImpl.doTest()" + testService.doTestService();
     }
 }
 

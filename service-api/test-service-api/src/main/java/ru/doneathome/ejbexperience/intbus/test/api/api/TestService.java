@@ -1,4 +1,4 @@
-package ru.doneathome.ejbexperience.test.api;
+package ru.doneathome.ejbexperience.intbus.test.api.api;
 
 /**
  * API тестового сервиса
@@ -7,5 +7,5 @@ package ru.doneathome.ejbexperience.test.api;
  */
 public interface TestService {
 
-    public String doTestService();
+    String doTestService();
 }

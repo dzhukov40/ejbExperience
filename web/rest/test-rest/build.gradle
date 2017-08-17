@@ -1,5 +1,4 @@
 group 'doneathome'
-version '1.0'
 
 apply plugin: 'java'
 apply plugin: 'war'
@@ -15,4 +14,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     providedCompile("javax.ws.rs:javax.ws.rs-api:${javax_ws_rs_javax_ws_rs_api_version}")
+    compile ("javax.ejb:javax.ejb-api:${javax_ejb_javax_ejb_api_version}")
+
+    compile(project(":service-api:int-bus-test-service-api"));
 }

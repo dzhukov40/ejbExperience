@@ -1,4 +1,4 @@
-package ru.doneathome.ejbexperience.test;
+package ru.doneathome.ejbexperience.intbus.test.api;
 
 /**
  * Created by dzhukov on 08.08.17.
@@ -8,5 +8,5 @@ package ru.doneathome.ejbexperience.test;
  */
 public interface TestFacade {
 
-    public String doTestFacade();
+    String doTestFacade();
 }
