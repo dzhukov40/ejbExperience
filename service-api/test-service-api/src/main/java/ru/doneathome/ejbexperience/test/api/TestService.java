@@ -1,4 +1,4 @@
-package ru.doneathome.ejbexperience.intbus.test.api.api;
+package ru.doneathome.ejbexperience.test.api;
 
 /**
  * API тестового сервиса

@@ -1,4 +1,4 @@
-package ru.doneathome.ejbexperience.intbus.test.api.rest;
+package ru.doneathome.ejbexperience.test.rest;
 
 
 import javax.ws.rs.ApplicationPath;

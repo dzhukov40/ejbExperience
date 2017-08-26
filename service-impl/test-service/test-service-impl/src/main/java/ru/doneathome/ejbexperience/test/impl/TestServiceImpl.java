@@ -1,6 +1,6 @@
-package ru.doneathome.ejbexperience.intbus.test.api.impl;
+package ru.doneathome.ejbexperience.test.impl;
 
-import ru.doneathome.ejbexperience.intbus.test.api.api.TestService;
+import ru.doneathome.ejbexperience.test.api.TestService;
 
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
@@ -13,7 +13,7 @@ import javax.ejb.TransactionAttributeType;
  * Created by dzhukov on 10.08.17.
  */
 @Remote
-@Stateless(name = "AdditionalAgreementService")
+@Stateless
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
 public class TestServiceImpl implements TestService {
 
