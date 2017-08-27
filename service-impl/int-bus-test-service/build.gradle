@@ -14,10 +14,10 @@ dependencies {
     // will be placed in the ear root
     // указываем проект который является зависимостью и будет включен как модуль в .ear
     // тут указано одно имя конкретного пакета, так-как в плагине gradle
-    deploy project(':service-impl:test-service:test-service-impl')
+    deploy project(':service-impl:int-bus-test-service:int-bus-test-service-impl')
 
     // зачем эта строчка?
-    earlib project(path:":service-impl:test-service:test-service-impl", configuration: 'compile')
+    earlib project(path:":service-impl:int-bus-test-service:int-bus-test-service-impl", configuration: 'compile')
 
 
     // The following dependencies will become ear libs and will

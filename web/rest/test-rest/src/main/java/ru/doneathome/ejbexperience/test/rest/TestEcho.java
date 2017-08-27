@@ -25,7 +25,7 @@ import javax.ws.rs.core.MediaType;
 public class TestEcho {
 
     // инжектим фасад
-    @EJB(lookup = "java:global/int-bus-test-service/test-service-impl/TestServiceImpl!ru.doneathome.ejbexperience.test.api.TestService")
+    @EJB(lookup = "java:global/int-bus-test-service/int-bus-test-service-impl/TestFacadeImpl!ru.doneathome.ejbexperience.intbus.test.api.TestFacade")
     private TestFacade testFacade;
 
     @GET
